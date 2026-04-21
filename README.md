@@ -12,6 +12,7 @@ This repo contains a clean 2D RPG template for Godot 4 with:
    - Add `autoloads/EventBus.gd` as `EventBus`
    - Add `autoloads/GameState.gd` as `GameState`
    - Add `autoloads/QuestSystem.gd` as `QuestSystem`
+   - Add `autoloads/Inventory.gd` as `Inventory`
 3. Set `scenes/Main.tscn` as the main scene.
 4. Add input actions (`Input Map`): `move_up`, `move_down`, `move_left`, `move_right`.
 5. Add action `ui_accept` for dialogue advance (Enter/Space).
@@ -23,7 +24,8 @@ This repo contains a clean 2D RPG template for Godot 4 with:
 
 ## Next tasks
 - Add `TileSet` + tilemap world tiles
-- Add NPC interaction and dialogue UI
 - Implement turn-based combat logic in `CombatArena`
-- Add inventory, quests, save/load
+- Add NPC interaction and dialogue UI (basic implemented)
+- Add inventory (implemented), quests (basic implemented), save/load
+- Add leveling system (implemented)
 
