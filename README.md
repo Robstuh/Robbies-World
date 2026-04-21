@@ -24,7 +24,7 @@ This repo contains a clean 2D RPG template for Godot 4 with:
 
 ## Next tasks
 - Add `TileSet` + tilemap world tiles
-- Implement turn-based combat logic in `CombatArena`
+- Implement turn-based combat logic in `CombatArena` (implemented)
 - Add NPC interaction and dialogue UI (basic implemented)
 - Add inventory (implemented), quests (basic implemented), save/load
 - Add leveling system (implemented)
