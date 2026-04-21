@@ -9,6 +9,11 @@ func _ready():
     EventBus.connect("request_enter_combat", Callable(self, "_on_request_enter_combat"))
     EventBus.connect("request_return_to_exploration", Callable(self, "_on_request_return_to_exploration"))
     EventBus.connect("request_dialogue", Callable(self, "_on_request_dialogue"))
+    EventBus.connect("actor_died", Callable(self, "_on_actor_died"))
+
+func _on_actor_died(actor):
+    if actor is Enemy and current_player:
+        current_player.gain_exp(50)
 
 func _on_request_enter_combat(enemy_list):
     current_mode = Mode.COMBAT
